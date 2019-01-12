@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- разметка для окна добавления нового элемента в постоянные товары -->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/promt_add_tipe_tovar_layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+    <TextView
+            android:id="@+id/promt_add_tovar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавляем товар"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+            android:id="@+id/promt_add_tovar_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" ><requestFocus />
+    </EditText>
+
+    <EditText
+            android:id="@+id/promt_add_tovar_input_rov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType = "number">
+    </EditText>
+    <Spinner
+            android:id="@+id/promt_add_tovar_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="Введите тип"
+            android:completionThreshold="1"/>
+</LinearLayout>

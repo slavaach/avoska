@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  разметка для флиппера с заказом -->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/AppText">
+
+    <fragment
+            android:id="@+id/flipper_first_listFirstFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/AppText"
+            android:name="ru.e2k.chechina.zakupka.FirstFragment"/>
+
+
+</RelativeLayout>

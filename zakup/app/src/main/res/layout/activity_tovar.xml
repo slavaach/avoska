@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- разметка для формы со списком постоянных товаров -->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.TovarActivity"
+        android:orientation="vertical"
+        android:id="@+id/fragment_zakup_rl"
+        android:background="@drawable/menu_old_book">
+
+    <include layout="@layout/toolbar"/>
+    <!--строчка android:layout_marginTop="47dp" пододвигает вниз
+      строчка android:imeOptions="actionDone" убирает клавиатуру после ввода (у меня не сработало)-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:id="@+id/activity_tovar_text_tip_tovar_list"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center_vertical"
+                    style="@style/AppText">
+        <TextView
+                android:id="@+id/activity_tovar_idViewName"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Id"
+                style="@style/AppText"
+                android:textSize="11sp"/>
+        <TextView
+                android:id="@+id/activity_tovar_ordersViewName"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_toRightOf = "@id/activity_tovar_idViewName"
+                style="@style/AppText"
+                android:text="№"
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/activity_tovar_nameTipeViewName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_toRightOf = "@id/activity_tovar_ordersViewName"
+                style="@style/AppText"
+                android:text="тип"
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/activity_tovar_nameViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_toRightOf = "@id/activity_tovar_nameTipeViewName"
+                style="@style/AppText"
+                android:text="название"
+                android:textSize="18sp"/>
+
+    </RelativeLayout>
+    <!-- android:listSelector="@color/primary" ставит цвет выбранного у меня не работало
+    android:choiceMode="singleChoice" ставит выбор только одной строки
+    android:listSelector="@color/primary"
+    android:background="@drawable/item_list_view" устанавливает сложный вид цвета-->
+    <ListView
+            android:id="@+id/activity_tovar_tip_tovar_list"
+            style="@style/AppText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@id/activity_tovar_text_tip_tovar_list"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/White"
+            android:layout_above="@id/fragment_zakup_Line_butten">
+    </ListView>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/activity_tovar_Line_butten"
+            android:minHeight="45dp"
+            android:background="@color/primary">
+
+        <ImageButton
+                android:id="@+id/activity_tovar_addButton_tip_tovar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/AppText"
+                android:onClick="click_addButton_tip_tovar"
+                android:text="+"
+                android:src="@drawable/baseline_add_black_24"
+                android:background="@color/primary"
+                android:minHeight="45dp"/>
+        <ImageButton
+                android:id="@+id/activity_tovar_updateButton_tip_tovar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/activity_tovar_addButton_tip_tovar"
+                style="@style/AppText"
+                android:onClick="click_updateButton_tip_tovar"
+                android:text=">"
+                android:src="@drawable/baseline_create_black_24"
+                android:background="@color/primary"
+                android:minHeight="45dp"/>
+        <ImageButton
+                android:id="@+id/activity_tovar_deleteButton_tip_tovar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/activity_tovar_updateButton_tip_tovar"
+                style="@style/AppText"
+                android:onClick="click_deleteButton_tip_tovar"
+                android:text="-"
+                android:src="@drawable/baseline_clear_black_24"
+                android:background="@color/primary"
+                android:minHeight="45dp"/>
+        <TextView
+                android:id="@+id/activity_tovar_Count_text_tip_tovar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/activity_tovar_deleteButton_tip_tovar"
+                style="@style/AppText"
+                android:text="Кол-во"
+                android:textSize="18sp"
+                android:layout_centerVertical = "true"/>
+
+        <ImageButton
+                android:id="@+id/fragment_zakup_ordersButton_tip_tovar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                style="@style/AppText"
+                android:onClick="click_ordersButton_tip_tovar"
+                android:text="-"
+                android:src="@mipmap/orders"
+                android:background="@color/primary"
+                android:minHeight="45dp"/>
+        <Spinner
+                android:id="@+id/activity_tovar_orders_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:gravity="right"
+                android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

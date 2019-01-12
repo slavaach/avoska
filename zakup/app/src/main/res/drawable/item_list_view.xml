@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Разметка для выделения строки  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Палец нажимает на пункт, но пункт ещё не активирован -->
+    <item android:state_pressed="true"
+          android:drawable="@color/none" />
+
+    <!-- Пункт активирован.  В режиме SINGLE_CHOICE_MODE пункт подсвечивается -->
+    <item android:state_activated="true"
+          android:drawable="@color/none" />
+<!--    пункт выбран-->
+    <item android:state_checked="true"
+          android:drawable="@color/none" />
+    <!--    пункт в фокусе-->
+    <item android:state_focused="true"
+          android:drawable="@color/none" />
+    <!-- По умолчанию -->
+    <item android:drawable="@color/none" />
+</selector>

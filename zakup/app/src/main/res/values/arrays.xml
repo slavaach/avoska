@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="multispinner_entries">
+        <item>один</item>
+        <item>второй</item>
+    </array>
+</resources>

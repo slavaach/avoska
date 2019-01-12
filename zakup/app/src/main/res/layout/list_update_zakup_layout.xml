@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.e2k.chechina.zakupka.dao.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:orientation="horizontal"
+                                                     android:padding="5dp"
+                                                     android:descendantFocusability="blocksDescendants"
+                                                     android:gravity="center_vertical"
+                                                     style="@style/AppText">
+    <!--  разметка строки в листе закупок в нижнем уровне дерева -->
+    <TextView
+            android:id="@+id/list_update_zakup_layout_home"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            style="@style/AppText"
+            android:textSize="18sp"
+            android:tag="normal"
+            android:paddingLeft="10dp"/>
+
+
+    <CheckBox
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_update_zakup_layout_counts_zView"
+        android:layout_width="40pt"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:layout_alignParentRight = "true"
+        android:text=""
+        style="@style/AppText"
+        android:textSize="18sp"
+        android:padding="0dip"
+        android:layout_margin="0dip"
+        android:layoutDirection="rtl"/>
+
+</ru.e2k.chechina.zakupka.dao.CheckableRelativeLayout>

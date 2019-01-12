@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  разметка для строки поиска -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/multi_choice_list_spinner_dropddown_item_text_spiner"
+                 style="?android:attr/spinnerDropDownItemStyle"
+                 android:singleLine="true"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ellipsize="marquee"
+                 android:textSize="22dp"
+                 android:background="@color/White"
+                 android:listSelector="@color/primary"
+                 android:padding="12dp"/>

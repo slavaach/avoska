@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        app:popupTheme="@style/Menu">
+    <item
+            android:id="@+id/action_zakup"
+            android:orderInCategory="101"
+            android:title="выбор состояния"
+            android:icon="@mipmap/shoping_set"
+            app:showAsAction="ifRoom"
+            android:visible="true"
+            android:enabled="true"
+            android:checkable="true"
+            android:listSelector="@color/primary_light"/>
+
+
+        <item android:id="@+id/tovar"
+              android:title="Всегда надо"
+              android:background="@color/primary"
+              android:listSelector="@color/primary"/>
+        <item android:id="@+id/tipe_tovar"
+              android:title="Тип товара"
+              android:background="@color/primary"
+              android:listSelector="@color/primary"/>
+        <item android:id="@+id/home_sl"
+              android:title="Дома"
+              android:background="@color/primary"
+              android:listSelector="@color/primary"/>
+    <item android:id="@+id/delete_history"
+          android:title="Удалить историю"
+          android:background="@color/primary"
+          android:listSelector="@color/primary"/>
+
+<!-- путь Android/data/ru.e2k.chechina.zakup/file/Авоська -->
+
+</menu>

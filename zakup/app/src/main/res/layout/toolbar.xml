@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   тулбар в справочниках -->
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:id="@+id/toolbar"
+           android:background="@color/primary"
+           android:gravity="top"
+            android:minHeight="70dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="@color/primary">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Авоська"
+              android:textSize="18sp"
+              android:id="@+id/toolbar_titles"
+              android:gravity="bottom"
+              android:background="@color/primary"/>
+    <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Тип товара"
+                  android:textSize="22sp"
+                  android:id="@+id/toolbar_subtitles"
+                  android:gravity="bottom"
+                  android:background="@color/primary"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+

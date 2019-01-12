@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- разметка для основной страницы -->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/main_layout"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="@drawable/menu_old_book">
+
+    <include layout="@layout/toolbar_main"/>
+
+    <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/AppText"/>
+
+</LinearLayout>

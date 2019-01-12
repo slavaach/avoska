@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  разметка для списка домов в меню-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/promt_multi_choice_home_layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+
+    <ListView
+            android:id="@+id/promt_multi_choice_home_home_list"
+            style="@style/AppText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@id/fragment_zakup_text_tip_tovar_list"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/White"
+            android:layout_above="@id/fragment_zakup_Line_butten"
+            android:divider="@null"
+            android:padding="0dp">
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<ru.e2k.chechina.zakupka.dao.TreeListRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:orientation="horizontal"
+                                                     android:padding="5dp"
+                                                     android:descendantFocusability="blocksDescendants"
+                                                     android:gravity="center_vertical"
+                                                     style="@style/AppText"
+                                                     android:id = "@+id/list_zakup_treelist_RelativeLayout1">
+    <!--  разметка верхней строки в листе закупки-->
+    <LinearLayout
+             android:layout_width="match_parent"
+            android:id="@+id/vertical_main_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:padding="0dp"
+             android:layout_margin="0dp"
+             style="@style/AppText">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/horizontal_main_layout"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            style="@style/AppText">
+        <ImageButton
+                android:id="@+id/list_zakup_treelist_idView"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                style="@style/AppText"
+                android:text="+"
+                android:src="@drawable/baseline_keyboard_arrow_right_black_24"
+                android:minHeight="25dp"/>
+    <TextView
+            android:id="@+id/list_zakup_treelist_ordersView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_toRightOf = "@id/list_zakup_treelist_idView"
+            style="@style/AppText"
+            android:textSize="18sp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:gravity="left"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="0dip"
+            android:scrollbars="horizontal"
+            android:tag="normal"/>
+
+    <TextView
+            android:id="@+id/list_zakup_treelist_nameTipeView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_toRightOf = "@id/list_zakup_treelist_ordersView"
+            style="@style/AppText"
+            android:textSize="18sp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:gravity="left"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dip"
+            android:scrollbars="horizontal"
+            android:tag="normal"/>
+
+    <TextView
+            android:id="@+id/list_zakup_treelist_nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:layout_toRightOf = "@id/list_zakup_treelist_nameTipeView"
+            android:layout_toLeftOf = "@id/list_zakup_treelist_check"
+            style="@style/AppText"
+            android:textSize="18sp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dip"
+            android:scrollbars="horizontal"
+            android:tag="normal"/>
+    <!--  android:onClick="onCheckboxClicked" -->
+    <CheckBox android:id="@+id/list_zakup_treelist_check"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textSize="18sp"
+              android:layout_alignParentRight = "true"
+              android:padding="0dip"
+              android:layout_margin="0dip"
+              android:layoutDirection="rtl"/>
+    </RelativeLayout>
+        <ListView
+                style="@style/AppText"
+                android:id="@+id/list_zakup_treelist_ListCh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:layout_below = "@id/horizontal_main_layout"
+                android:choiceMode="singleChoice"
+                android:listSelector="@color/White">
+        </ListView>
+    </LinearLayout>
+</ru.e2k.chechina.zakupka.dao.TreeListRelativeLayout>

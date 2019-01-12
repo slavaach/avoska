@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  проба для реализоции TreeList -->
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/promt_update_zakup_second_gridview"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:numColumns="1"
+android:verticalSpacing="16dp"
+android:horizontalSpacing="16dp"
+android:stretchMode="columnWidth" />

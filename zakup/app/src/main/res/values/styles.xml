@@ -1,0 +1,44 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. <item name="android:actionMenuTextColor">@color/White</item>
+       -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:panelFullBackground">@color/primary</item>
+        <item name="android:background">@color/primary</item>
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/primary_dark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:popupBackground">@color/primary</item>
+
+
+        <!-- <item name="android:gravity">center</item>-->
+    </style>
+
+    <style name="AppText" parent="Base.Theme.AppCompat">
+         <item name="colorAccent">@color/primary_dark</item>
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/none</item>
+        <item name="android:listSelector">@drawable/item_list_view</item>
+
+
+    </style>
+
+<!-- <item name="colorEdgeEffect">@color/primary_dark</item>
+ -->
+    <style name="Menu">
+        <item name="android:colorBackground">@color/primary</item>   //color of background menu
+        <item name="android:textColor">@color/White</item>       //text color
+        <item name="android:listSelector">@drawable/item_bg_menu</item>     //this is for when button press color changed
+    </style>
+
+
+</resources>

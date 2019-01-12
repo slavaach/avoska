@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ru.e2k.chechina.zakupka"
+          android:versionCode="5"
+          android:versionName="1.5">
+
+    <uses-sdk
+            android:minSdkVersion="15"
+            android:targetSdkVersion="28"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+     <!--android:roundIcon="@drawable/ic_launcher_round"
+                -->
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/logotip_skv"
+            android:label="Авоська"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+               <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- строчка android:windowSoftInputMode="adjustPan" делает, что бклавиатура перекрывала кнопки -->
+        <activity android:name=".Activity.Tipe_tovarActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".Activity.TovarActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".Activity.HomeActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
+        </activity>
+    </application>
+
+</manifest>
